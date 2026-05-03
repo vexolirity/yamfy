@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve frontend
-app.use(express.static(path.join(__dirname, "../frontend")));
+app.use(express.static(path.join(__dirname, ".index.html")));
 
 // Search lagu
 app.get("/api/search", async (req, res) => {
